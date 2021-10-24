@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esta pagina em um dispositivo menor! ou maior, sei lá. Ou mexa no tamanho da janela</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imgs/img-g.jpg" source="image/jpeg">
+        <source media="(min-width: 750px)" srcset="imgs/img-m.jpg" source="image/jpeg">
+        <!--SOURCES NA ORDEM! senão não carrega!!!!-->
+        <img src="imgs/img-p.jpg" alt="imagem flexível">
+    </picture>
+    <h1>Reroduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audio no HTML 5:</p>
+    <audio src="midia/A Night Alone - TrackTribe.mp3" controls>Será que algo entra aqui?</audio>
+    <p>Outra maneira:</p>
+    <audio preload="metadata" none>
+        <source src="midia/A Night Alone - TrackTribe.mp3" type="audio/mpeg">
+        <!--Aqui podem entrar outros source para tipos de arquivo diferentes. respeito à ordem, igual ao source media, das imagens. e dá pra colocar um paragrafo caso nenhum seja compativel - veja abaixo-->
+        <p>Infelizmente seu navegador não toca essa joça!</p>
+    </audio>
+  
+
+    
+
+</body>
+</html>

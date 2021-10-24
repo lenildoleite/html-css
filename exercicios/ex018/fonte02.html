@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'frutilla';
+            src: url('fontes/Frutilla\ Script.otf') format('opentype'), url('fontes/Frutilla\ Script.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* tipos de format()
+        - opentype (otf)
+        - truetype (TTF)
+        - embedded-opentype\
+        truetype-aat (Apple Advanced Typography)*/
+
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-family: 'frutilla', serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando fontes externas (aqui no caso, a Frutilla Script)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur odio impedit ea perferendis, nam molestiae
+        provident cum praesentium quod iure itaque ut. Reiciendis ex accusantium itaque odit, laudantium quo cumque.</p>
+       
+</body>
+
+</html>

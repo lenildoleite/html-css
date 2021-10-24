@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        
+        }
+        header{
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+
+        }
+
+        nav{
+            background-color: rgba(216, 191, 216, 0.685);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 5px 3px 6px 0px rgba(0, 0, 0, 0.25);
+
+        }
+        h1{
+            box-shadow:  inset 0px 0px 8px 0px rgba(0, 0, 0, 0.25); /*só pra testar*/
+        }
+
+        nav > a {
+            text-decoration: none;
+
+            margin-right: 10%;
+        }
+
+        nav> a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: lightsteelblue;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px 30px; /* começa do topo esquerdo e segue em sentido horário*/
+
+        }
+
+        article{
+            background-color: slategrey;
+            color: snow;
+            padding: 5px 10px 1px 10px;
+            margin-bottom: 5px;
+        }
+        
+        article > aside {
+
+            background-color: teal;
+            margin: 0px;
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--não confundir com HEAD!-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p> Esportes Política e Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia tal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloremque alias praesentium commodi aut illum possimus! Ex sed quo numquam ullam, cupiditate at illo, a excepturi qui, expedita obcaecati sint!</p>
+                <aside>
+                    <p>Artigo escrito por Fulano Sicrano.</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Noticia tal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloremque alias praesentium commodi aut illum possimus! Ex sed quo numquam ullam, cupiditate at illo, a excepturi qui, expedita obcaecati sint!</p>
+                <aside>
+                    <p>Artigo escrito por Fulano Sicrano.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Lenny!</p>
+    </footer>
+    <div id="bola"></div>
+    <!--é permitido colocar qualquer grouping tag dentro de qualquer grouping tag. aside pode estar dentro do article, mais pode estar dentro de article, etc.-->
+</body>
+
+</html>

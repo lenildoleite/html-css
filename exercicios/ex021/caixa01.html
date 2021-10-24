@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas (box-model)</title>
+    <!--"user agent" é sempre o navegador-->
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        h1 {/*block-level, se eu quiser colocar ele como inline-level, devo usar o seletor display: inline;
+        e nao pode mexer com altura e largura, por ser inline*/
+            background-color: cornflowerblue;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: teal;
+            /*shorthand: border: [largura] [estilo] [cor]
+            Então o caso acima seria: border: 10px solid teal; */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            /*shorthand: padding: [↑] [→] [↓] [←]; (quatro medidas diferentes)
+            padding: [↑↓] [←→];  (duas medidas diferentes)
+            padding: [↑↓←→]; (medida única)
+            Então o caso acima ficaria: padding: 10px 10px 30px 10px;*/
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            A mesma regra do padding, acima, se aplicam, com o shorthand margin.
+            margin: auto; para centralizar caixas
+            Assim, pra centralizar horizontalmente e colocar um valor fixo verticalmente, fica assim:*/
+            margin: 20px auto 40px auto;
+
+
+            outline-width: 15px 10px;
+            /*outline ocupa a área da margin, e não empurra outros elementos*/
+            outline-style: dotted;
+            outline-color: tomato;
+
+            /* shorthand apenas com "outline", mesmas regras acima*/
+        }
+
+        a { /*inline-level. se eu quiser transformar ele em block use display:block;
+        inline não mexe com altura e largura. mas vc pode declara-lo como display: inline-block; o que permite trablalhar com caracteristicas como altura e largura, como se fosse um block*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: crimson;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>.
+        Vamos ver como isso tudo funciona.</p>
+
+</body>
+
+</html>
