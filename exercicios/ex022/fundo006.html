@@ -8,34 +8,42 @@
     <style>
         body {
             height: 100vh;
-            background-color: black; /* sempre bom incluir uma cor, pra ficar bonito enquanto carrega a imagem*/
+            /*
+            background-color: black; /* - sempre bom incluir uma cor, pra ficar bonito enquanto carrega a imagem
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-attachment: fixed; /*isso é da proxima aula hehehehe*/
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; pode ser scroll tb 
+            */
+
+  
+                      
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /*ordem de importancia de shorthands de background: color > image > position > repeat > [size - na documentacao diz que funciona, mas na pratica nao] > attachment*/
+
 
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 200px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 20px;
+            text-align: justify;
         }
         p, h1{
-            font-family: sans-serif;
-            font-
+            font-family: sans-serif; 
         }
     </style>
 </head>ß
 <body>
     <main>
         <h1>Teste de Imagem</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eos rerum possimus dolorum numquam fugiat ducimus eveniet repellat repellendus est debitis expedita temporibus, iusto quae corrupti nostrum cum dolorem voluptates.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illum, delectus aliquid nesciunt totam facere cupiditate culpa vel rem asperiores itaque deleniti dolore velit sapiente quaerat accusamus tenetur fugit non?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente, illum nesciunt optio hic delectus cumque reprehenderit maiores iusto nostrum illo, voluptatibus itaque officia enim doloribus odit facere dolore tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eos rerum possimus dolorum numquam fugiat ducimus eveniet repellat repellendus est debitis expedita temporibus, iusto quae corrupti nostrum cum dolorem voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illum, delectus aliquid nesciunt totam facere cupiditate culpa vel rem asperiores itaque deleniti dolore velit sapiente quaerat accusamus tenetur fugit non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente, illum nesciunt optio hic delectus cumque reprehenderit maiores iusto nostrum illo, voluptatibus itaque officia enim doloribus odit facere dolore tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sequi expedita, eveniet hic officiis debitis esse rerum animi fugit at aperiam natus. Incidunt architecto libero praesentium reiciendis, minus eius repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus officia maxime repellat praesentium ut provident odio velit unde cum? Tempora nesciunt minima debitis non. Hic corporis odio autem iste quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni minus quos quaerat incidunt, autem alias ducimus! Facere blanditiis nam ullam, similique molestiae, sit omnis numquam aliquam dolorum, ut fuga.</p>
     </main>
 </body>
 </html>
