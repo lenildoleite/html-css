@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
         body{
-            height: 97vh;
+            height: 98vh;
             margin: 0%;
         }
 
@@ -10,20 +10,34 @@
             color: #fff;
             font-family: Arial, Helvetica, sans-serif;
         }
-        header{
+
+        header,footer{
             background-color: #000000;
             text-align: center;
             padding: 1vh;
-        }
-        footer{
-            background-color: #000000;
-            text-align: center;
-            padding: 1vh;
+            z-index: 0;
         }
         section{
             background-color: #fff;
-            margin: 120px 0px 120px 30px;
+            padding: 6vh 7vw 12vh 4vh;
+            position: relative;
+            background-size: cover;
+            box-shadow: 0vw 0vh 4vw 0.5vh #000000;  
+            z-index: 2;
         }
+        section.fundo1{
+            background: url(imagens/background001.jpg) center center no-repeat fixed; 
+            box-shadow: none;     
+            z-index: 1;
+        }
+
+        section.fundo2{
+            background: url(imagens/background002.jpg) center center no-repeat fixed;        
+            box-shadow: none;   
+            z-index: 1;  
+
+        }
+
         h1.titulo{
             color: #fff;
             font-family: 'Passion One', cursive;
@@ -32,21 +46,20 @@
             font-variant: small-caps;
             margin-bottom: 0%;
         }
-        article.versosclaros{
-            width: fit-content;
-            padding: 1vw;
+
+        article{
+            width: fit-content;    
+            padding: 1vw;     
+            font-family: 'Sriracha', cursive;  
+            font-size: 3.5vw; 
+        }
+        article.versosclaros{        
             color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            font-family: 'Sriracha', cursive;
-            font-size: 3.5vw;
-            background-color: #00000066;
+            text-shadow: 1px 1px 3px #000;
+            background-color: #00000033;
         }
         article.versosescuros{
-            width: fit-content;
-            padding: 1vw;
             color: #000;
-            font-family: 'Sriracha', cursive;
-            font-size: 3.5vw;
             margin-bottom: 3.5vh;
         }
 
