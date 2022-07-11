@@ -36,21 +36,21 @@
             background-color: #fff;
             padding: 6vh 7vw 12vh 4vh;
             position: relative;
-            background-size: cover;
-            box-shadow: 0vw 0vh 4vw 0.5vh #000000;  
             z-index: 2;
         }
-        section.fundo1{
-            background: url(imagens/background001.jpg) center center no-repeat fixed; 
-            box-shadow: none;     
-            z-index: 1;
+
+        section.fundo{
+            box-shadow: inset 0vw 0vh 4vw 0.5vh #000000;  
+        }
+        section#img1{
+            background: url(imagens/background001.jpg)  no-repeat fixed center center; 
+            background-size: cover;
+           
         }
 
-        section.fundo2{
-            background: url(imagens/background002.jpg) center center no-repeat fixed;        
-            box-shadow: none;   
-            z-index: 1;  
-
+        section#img2{
+            background: url(imagens/background002.jpg)  no-repeat fixed center center; 
+            background-size: cover;       
         }
 
         h1.titulo{
